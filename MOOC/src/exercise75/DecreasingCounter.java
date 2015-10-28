@@ -1,8 +1,7 @@
 package exercise75;
 
 public class DecreasingCounter {
-	private int value; // object variable that remembers the value of the
-						// counter
+	private int value; // object variable that remembers the value of the counter
 
 	private int initialValue;
 
