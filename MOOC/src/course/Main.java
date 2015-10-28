@@ -4,19 +4,20 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Person pekka = new Person("Pekka");
-		Person andrew = new Person("Andrew");
+		Person bob = new Person("ion");
+		Person andy = new Person("Andy");
 
-		pekka.becomeOlder();
-        pekka.becomeOlder();
+		int i = 0;
+		while (i < 30) {
+			bob.becomeOlder();
+			i++;
+		}
 
-        andrew.becomeOlder();
+		andy.becomeOlder();
 
-        System.out.println( "Age of Pekka: "+pekka.getAge() );
-        System.out.println( "Age of Andrew: "+andrew.getAge() );
-
-        int total = pekka.getAge() + andrew.getAge();
-
-        System.out.println( "Pekka and Andrew total of "+total+ " years old" );
+		System.out.println(andy); // same as System.out.println( andy.toString()
+									// );
+		System.out.println(bob); // same as System.out.println( bob.toString()
+									// );
 	}
 }

@@ -22,4 +22,20 @@ public class Person {
 	public int getAge() {
 		return this.age;
 	}
+
+	public boolean isAdult() {
+		if (this.age < 18) {
+			return false;
+		}
+
+		return true;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+	
+	public String toString(){
+		return this.name + ", age " + this.age + " years";
+	}
 }
