@@ -4,20 +4,18 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Person bob = new Person("ion");
-		Person andy = new Person("Andy");
+		Person matti = new Person("Matti");
+		Person john = new Person("John");
 
-		int i = 0;
-		while (i < 30) {
-			bob.becomeOlder();
-			i++;
-		}
+		matti.setHeight(180);
+		matti.setWeight(86);
 
-		andy.becomeOlder();
+		john.setHeight(175);
+		john.setWeight(64);
 
-		System.out.println(andy); // same as System.out.println( andy.toString()
-									// );
-		System.out.println(bob); // same as System.out.println( bob.toString()
-									// );
+		// System.out.println(matti.getName() + ", body mass index: " +
+		// String.format("%.2f", matti.bodyMassIndex()));
+		// System.out.println(john.getName() + ", body mass index: " +
+		// String.format("%.2f", john.bodyMassIndex()));
 	}
 }
