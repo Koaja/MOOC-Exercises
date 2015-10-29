@@ -4,15 +4,28 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		LyrraCard card = new LyrraCard(5);
-		System.out.println(card);
+		LyyraCard cardPekka = new LyyraCard(20);
+		LyyraCard cardBrian = new LyyraCard(30);
 
-		card.payGourmet();
-		System.out.println(card);
+		cardPekka.payGourmet();
+		cardBrian.payEconomical();
 
-		card.payGourmet();
-		System.out.println(card);
+		System.out.println(cardPekka);
+		System.out.println(cardBrian);
 
+		cardPekka.loadMoney(20);
+		cardBrian.payGourmet();
+
+		System.out.println(cardPekka);
+		System.out.println(cardBrian);
+
+		cardPekka.payEconomical();
+		cardPekka.payEconomical();
+
+		cardBrian.loadMoney(50);
+
+		System.out.println(cardPekka);
+		System.out.println(cardBrian);
 	}
 
 }
